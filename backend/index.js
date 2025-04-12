@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // --- MongoDB Connection ---
-mongoose.connect('mongodb://127.0.0.1:27017/contactFormDB')
+mongoose.connect('mongodb+srv://gurramkarthik2006:karthik@cluster0.rruaf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0/contactFormDB')
   .then(() => console.log('MongoDB connected'))
   .catch((err) => console.error('MongoDB connection error:', err));
 
